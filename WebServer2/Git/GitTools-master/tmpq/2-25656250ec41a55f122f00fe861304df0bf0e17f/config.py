@@ -1,0 +1,6 @@
+#
+# === GENERAL ===
+#
+
+DEBUG = False
+SECRET_KEY = "" # PUT YOUR SECRET HERE

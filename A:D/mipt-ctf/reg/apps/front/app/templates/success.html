@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+
+{% block title %}New website{% endblock %}
+
+{% block head %}
+{{ super() }}
+
+<link href="{{ url_for('static', filename='css/index.css') }}" rel="stylesheet" type="text/css"/>
+
+{% endblock %}
+
+
+{% block content %}
+
+
+<div id="content-wrapper" class="mui--text-center">
+    <div class="mui--appbar-height"></div>
+    <br><br><br>
+    <div class="mui--text-display3 row wow zoomInDown">Domain registered</div>
+    <br><br><br>
+    <div class="mui--text-headline">You can access your website at <a href="http://{{url}}:8080">{{url}}:8080</a></div>
+    <br><br>
+    <br>
+    <div class="mui--text-headline">Don't forget to use our DNS server at {{dns}}:53</div>
+    <br><br>
+    <br>
+
+
+    <br/> <br/> <br/>
+
+
+</div>
+{% endblock %}

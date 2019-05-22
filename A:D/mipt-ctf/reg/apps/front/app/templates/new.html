@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+
+{% block title %}New website{% endblock %}
+
+{% block head %}
+{{ super() }}
+
+<link href="{{ url_for('static', filename='css/new.css') }}" rel="stylesheet" type="text/css"/>
+
+{% endblock %}
+
+
+{% block content %}
+
+
+<div id="content-wrapper" class="mui--text-center">
+    <div class="mui--appbar-height"></div>
+    <br><br>
+
+    <div class="mui-row">
+        <div class="mui-col-md-2"></div>
+        <div class="mui-col-md-8">
+
+                {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+                <div class="mui-panel" role="alert">{{ message }}</div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+    <br><br>
+            <div class="mui-panel">
+
+                <form method="post" action="" enctype="multipart/form-data" class="mui-form">
+                    <legend>Register new website</legend>
+                    {{ form.csrf_token }}
+                    <div class="mui-textfield">{{ form.domain(size=20, placeholder="Domain") }}</div>
+                    <div class="mui-textfield">{{ form.username(size=20, placeholder="Username") }}</div>
+                    <div class="mui-textfield">{{ form.password(size=20, placeholder="Password") }}</div>
+
+
+<div class="upload-btn-wrapper" style="margin-top: 30px;margin-bottom: 30px;">
+  <button class="mui-btn mui-btn--primary">Upload website content</button>
+  {{ form.archive() }}
+</div><br>
+                    <input type="submit" value="Register" class="mui-btn mui-btn--primary mui-btn--raised">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="mui-col-md-2"></div>
+
+    <br/> <br/> <br/>
+
+
+</div>
+{% endblock %}

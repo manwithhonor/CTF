@@ -1,0 +1,18 @@
+
+libleap.a(lib.o):	file format ELF32-i386
+
+Disassembly of section .text:
+leap:
+       0:	55 	pushl	%ebp
+       1:	89 e5 	movl	%esp, %ebp
+       3:	31 c0 	xorl	%eax, %eax
+       5:	40 	incl	%eax
+       6:	8b 5d 08 	movl	8(%ebp), %ebx
+       9:	31 c3 	xorl	%eax, %ebx
+       b:	81 fb 08 08 00 00 	cmpl	$2056, %ebx
+      11:	75 07 	jne	7 <leap+0x1a>
+      13:	b8 01 00 00 00 	movl	$1, %eax
+      18:	eb 05 	jmp	5 <leap+0x1f>
+      1a:	b8 00 00 00 00 	movl	$0, %eax
+      1f:	5d 	popl	%ebp
+      20:	c3 	retl

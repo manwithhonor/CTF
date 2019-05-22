@@ -1,0 +1,31 @@
+def gcd(a, b):
+     if a == 0:
+             return b, 0, 1
+     d, x1, y1 = gcd(b % a, a)
+     x = y1 - (b // a) * x1
+     y = x1
+     return d, x, y
+
+def rev(a, m):
+     g, x, y = gcd(a, m)
+     if g != 1:
+             print('BAD!')
+             return -1
+     else:
+             x = (x % m + m) % m 
+             return x
+ 
+
+
+def binpow(a, b, m):
+     if b == 0:
+             return 1
+     d = binpow(a, b // 2, m)
+     if b % 2 == 1:
+             return d * d % m * a % m
+     else:
+             return d * d % m
+
+d = rev(e, phi)
+res = binpow(c, d, n)
+text = hex(res)

@@ -1,0 +1,26 @@
+
+    <main role="main" class="container">
+      <div class="row">
+        <div class="col-md-8 blog-main">
+          <?php
+
+          $post = get_post($post_id);
+
+          if ($post && $post['author'] == $userid) {
+          ?>
+          <div class="blog-post">
+            <h3 class="pb-3 mb-4 font-italic border-bottom blog-post-break"><?=htmlentities($post['title']) ?></h3>
+            <p class="blog-post-meta">by <a href="/?author=<?= $post['author'] ?>"><?=get_login($post['author']) ?></a></p>
+
+            <p class="blog-post-break"><?=htmlentities($post['preview']) ?></p>
+            <p class="blog-post-break"><?=htmlentities($post['full']) ?></p>
+          </div>
+      <?php } else { ?>
+          <span class="text-danger">Post not found</span>
+      <?php } ?>
+
+        </div><!-- /.blog-main -->
+
+      </div><!-- /.row -->
+
+    </main><!-- /.container -->

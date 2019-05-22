@@ -1,0 +1,56 @@
+<div class="container">
+        <form class="form-horizontal" role="form" method="POST">
+            <div class="row">
+                <div class="col-md">
+                    <h2>Upload post</h2>
+                    <hr>
+                </div>
+            </div>
+            <?php if (isset($error)) { ?>
+            <div class="row">
+                <div class="col-md">
+                    <div class="form-control-feedback">
+                        <span class="text-danger align-middle">
+                            <i class="fa fa-close"></i><?= $error ?>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <?php } ?>
+            <div class="row">
+                <div class="col-md">
+                    <div class="form-group has-danger">
+                        <div class="input-group">
+                            <input type="text" name="title" class="form-control" id="title"
+                                   placeholder="Title" required autofocus>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <textarea rows="3" type="text" name="preview" class="form-control" id="preview"
+                                   placeholder="Preview for general users" required></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <textarea rows="7" type="text" name="full" class="form-control" id="full"
+                                   placeholder="Additional content for premium users" required></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="padding-top: 1rem">
+                <div class="col-md-6">
+                    <button type="submit" class="btn btn-outline-secondary btn-space"><i class="fa fa-sign-in"></i>Upload</button>
+                </div>
+            </div>
+        </form>
+    </div>

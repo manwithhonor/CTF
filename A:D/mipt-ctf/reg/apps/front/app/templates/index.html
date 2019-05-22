@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+
+{% block title %}New website{% endblock %}
+
+{% block head %}
+{{ super() }}
+
+{% endblock %}
+
+
+{% block content %}
+
+
+<div id="content-wrapper" class="mui--text-center">
+    <div class="mui--appbar-height"></div>
+    <br><br>
+    <div class="mui--text-display3 row wow zoomInDown">Reg.CTF</div>
+    <br><br>
+    <div class="mui--text-headline">The most advanced Hosting and DNS Provider!</div>
+    <br><br>
+    <br>
+    <br>
+
+    <div class="mui-row">
+        <div class="mui-col-md-4">
+            <div class="mui-container">
+                <i class="fa fa-hdd fa-5x" aria-hidden="true"></i><br><br>
+                <div class="mui--text-headline"><b>100 KB</b> disk space<br>For free</div>
+            </div>
+        </div>
+        <div class="mui-col-md-4">
+            <div class="mui-container">
+                <i class="fa fa-globe fa-5x" aria-hidden="true"></i><br><br>
+                <div class="mui--text-headline">Free <b>reg.ctf</b><br>Subdomain</div>
+            </div>
+        </div>
+        <div class="mui-col-md-4">
+            <div class="mui-container">
+                <i class="fa fa-server fa-5x" aria-hidden="true"></i><br><br>
+                <div class="mui--text-headline">Advanced<br><b>Servers</b></div>
+            </div>
+        </div>
+    </div>
+
+    <br/> <br/> <br/>
+    <button class="mui-btn mui-btn--accent" onclick="window.location='{{ url_for('new') }}'">Get started</button>
+    <br/> <br/> <br/>
+
+
+</div>
+{% endblock %}

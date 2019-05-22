@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+
+{% block title %}Login - {{ website }}{% endblock %}
+
+{% block head %}
+{{ super() }}
+
+{% endblock %}
+
+
+{% block content %}
+
+
+<div id="content-wrapper" class="mui--text-center">
+    <div class="mui--appbar-height"></div>
+    <br><br>
+    <div class="mui-row">
+        <div class="mui-col-md-2"></div>
+        <div class="mui-col-md-8">
+            <div class="mui-panel">
+
+                <form method="post" action="/login" class="mui-form">
+                    <legend>Login to <b>{{ website }}</b></legend>
+                    {{ form.csrf_token }}
+                    {{ form.target() }}
+                    <div class="mui-textfield">{{ form.login(size=20, placeholder="Username") }}</div>
+                    <div class="mui-textfield">{{ form.password(size=20, placeholder="Password") }}</div>
+
+                    <input type="submit" value="Log in" class="mui-btn mui-btn--primary mui-btn--raised">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="mui-col-md-2"></div>
+
+    <br/> <br/> <br/>
+
+
+</div>
+{% endblock %}

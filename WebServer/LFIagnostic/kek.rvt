@@ -1,0 +1,6 @@
+<?
+puts "lol"
+set fp [open "/flag.txt" r]
+set file_data [read $fp]
+close $fp
+puts $file_data

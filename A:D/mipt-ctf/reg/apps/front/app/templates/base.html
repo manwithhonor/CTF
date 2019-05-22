@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+    {% block head %}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
+          integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <link href="{{ url_for('static', filename='css/mui.min.css') }}" rel="stylesheet" type="text/css"/>
+    <script src="{{ url_for('static', filename='js/mui.min.js') }}"></script>
+    <link href="{{ url_for('static', filename='css/index.css') }}" rel="stylesheet" type="text/css"/>
+    <title>{% block title %}{% endblock %} - Reg.ctf</title>
+    {% endblock %}
+</head>
+<body>
+
+<div id="header">
+    <header class="mui-appbar mui--z1">
+        <div class="mui-container">
+            <table>
+                <tr class="mui--appbar-height">
+                    <td class="mui--text-title"><a href="{{ url_for('index') }}">Reg.ctf</a></td>
+                    <td class="mui--text-right">
+                        <ul class="mui-list--inline mui--text-body2">
+                            <li><a href="{{ url_for('index') }}">Home</a></li>
+                            <li><a href="{{ url_for('new') }}">New website</a></li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </header>
+
+</div>
+<div id="content">{% block content %}{% endblock %}</div>
+<div id="footer">
+    {% block footer %}
+    <footer>
+        <div class="mui-container mui--text-center">
+            &copy; Copyright 2018 by <a href="http://127.0.0.1">you</a>.
+        </div>
+    </footer>
+
+    {% endblock %}
+</div>
+</body>
+</html>

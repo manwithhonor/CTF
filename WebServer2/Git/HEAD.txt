@@ -1,0 +1,3 @@
+0000000000000000000000000000000000000000 bbb11faf4a4de1c6ae7f7fcaa5316ccd3cadeec1 root <root@vps595401.ovh.net> 1539706101 +0200	commit (initial): Initial commit
+bbb11faf4a4de1c6ae7f7fcaa5316ccd3cadeec1 0f646b3d78c46f016d5f7f9a97054f8523df0264 root <root@vps595401.ovh.net> 1539706935 +0200	commit: Make challenge solveable
+0f646b3d78c46f016d5f7f9a97054f8523df0264 25656250ec41a55f122f00fe861304df0bf0e17f root <root@vps595401.ovh.net> 1539706973 +0200	commit: Remove some credentials
